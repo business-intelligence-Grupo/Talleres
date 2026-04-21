@@ -74,7 +74,8 @@ Para esta transformación se utilizó  el formato **Generate Rows** este módulo
 ![Carga de la configuracion1](Imagenes/Transform3/output1.png)
 ![Carga de la configuracion2](Imagenes/Transform3/output2.png)
 ![Carga de la configuracion3](Imagenes/Transform3/output3.png)
-
-
 ![Carga de la transformacion](Imagenes/Transform3/transformacion.png)
+
+* **Reaultados Obtenidos**:
+
 ![Carga del archivo txt](Imagenes/Transform3/resultado.png)
