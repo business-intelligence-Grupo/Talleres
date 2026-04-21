@@ -1,5 +1,5 @@
 # Transformaciones
-## Transform 1: Procesamiento de Datos de Estudiantes
+## Transform 1: Json Input con Select Values transformation
 
 ### 1. Input (Entrada)
 Para la primera transformación se utilizó el paso **JSON input**. 
@@ -26,7 +26,7 @@ La transformación toma un archivo JSON crudo, corrige las rutas de acceso, norm
 
 ![alt text](Imagenes/Transform1/image.png)
 
-## Transform 2: Procesamiento de datos de Laptops
+## Transform 2: CSV con mapper transformation
 
 ### 1. Input (Entrada)
 Para esta transformación se utilizó  el formato **CSV file input**.
