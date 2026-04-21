@@ -80,10 +80,29 @@ Para esta transformación se utilizó  el formato **Generate Rows** este módulo
 
 ![Carga del archivo txt](Imagenes/Transform3/resultado.png)
 
-## Transform 4: Property Input con Add characters transformation
+## Transform 4: Property Input con Add constants transformation
 
 ### 1. Input (Entrada)
 Para esta transformación se utilizó el paso Property Input
 * **Configuración técnica:** En la pestaña File se cargó el archivo de propiedades y en la pestaña Fields se utilizaron los nombres de las variables para mapear el contenido.
   
 ![alt text](Imagenes/Transform4/Imagen1.png)
+
+### 2. Transform (Transformación)
+Se implementó el paso Add constants para enriquecer el flujo de datos con información estática.
+* **Inyección de metadatos:** Se definió un campo adicional "Entorno" donde se agregó el valor de "FIS-EPN"
+
+![alt text](Imagenes/Transform4/Imagen2.png)
+
+### 3. Output (Salida)
+Como destino final se configuró el paso XML output.
+* **Configuración técnica:** Se definió la ruta del archivo de salida y se verificó que los nombres de los elementos XML fueran compatibles con los estándares de etiquetas (sin espacios especiales).
+
+![alt text](Imagenes/Transform4/Imagen3.png)
+![alt text](Imagenes/Transform4/Imagen4.png)
+![alt text](Imagenes/Transform4/Imagen5.png)
+
+* **Reaultados Obtenidos**:
+La transformación procesa el archivo de propiedades, le añade la información institucional fija y genera un archivo XML estructurado, facilitando el intercambio de datos en el taller. Como se observa en la captura, cada registro incluye ahora el campo Entorno con el valor FIS-EPN, normalizando la salida para el proyecto de Business Intelligence.
+
+![alt text](Imagenes/Transform4/Imagen6.png)
