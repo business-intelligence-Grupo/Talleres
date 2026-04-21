@@ -48,15 +48,15 @@ Para esta transformación se utilizó  el formato **CSV file input**.
 ### 1. Input (Entrada)
 Para esta transformación se utilizó  el formato **Generate Rows** este módulo genera filas artificiales que son necesarias para el flujo de la transformación.
 
-![Carga del generaterows](Imagenes/Transform3/generaterows.PNG)
+![Carga del generaterows](Imagenes/Transform3/generaterows.png)
 
 
 ### 2. Transform (Transformación)
 * **Add Sequence**: Se añade el modulo de add sequence para agregar una secuencia de datos con un identificador único incremental, donde el valor inicial es 1 y el incremento es 1.
 * **Generate Random Value**: Este módulo genera valores aleatorios que se agregan a cada fila, Cada registro contiene un valor aleatorio diferente, útil para pruebas o simulaciones. El tipo de dato del valor aleatorio es interger.
 
-![Carga del addsequence](Imagenes/Transform3/addsequence.PNG)
-![Carga del generaterandomvalue](Imagenes/Transform3/generaterandomvalue.PNG)
+![Carga del addsequence](Imagenes/Transform3/addsequence.png)
+![Carga del generaterandomvalue](Imagenes/Transform3/generaterandomvalue.png)
 
 
 ### 3. Output (Salida)
@@ -71,10 +71,10 @@ Para esta transformación se utilizó  el formato **Generate Rows** este módulo
 - `id`
 - `dummy`
 - `valor_random`
-![Carga de la configuracion1](Imagenes/Transform3/output1.PNG)
-![Carga de la configuracion2](Imagenes/Transform3/output2.PNG)
-![Carga de la configuracion3](Imagenes/Transform3/output3.PNG)
+![Carga de la configuracion1](Imagenes/Transform3/output1.png)
+![Carga de la configuracion2](Imagenes/Transform3/output2.png)
+![Carga de la configuracion3](Imagenes/Transform3/output3.png)
 
 
-![Carga de la transformacion](Imagenes/Transform3/transformacion.PNG)
-![Carga del archivo txt](Imagenes/Transform3/resultado.PNG)
+![Carga de la transformacion](Imagenes/Transform3/transformacion.png)
+![Carga del archivo txt](Imagenes/Transform3/resultado.png)
