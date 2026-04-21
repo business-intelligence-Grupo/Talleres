@@ -79,3 +79,11 @@ Para esta transformación se utilizó  el formato **Generate Rows** este módulo
 * **Reaultados Obtenidos**:
 
 ![Carga del archivo txt](Imagenes/Transform3/resultado.png)
+
+## Transform 4: Property Input con Add characters transformation
+
+### 1. Input (Entrada)
+Para esta transformación se utilizó el paso Property Input
+* **Configuración técnica:** En la pestaña File se cargó el archivo de propiedades y en la pestaña Fields se utilizaron los nombres de las variables para mapear el contenido.
+  
+![alt text](Imagenes/Transform4/Imagen1.png)
