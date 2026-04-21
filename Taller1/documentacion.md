@@ -1,4 +1,4 @@
-# Transform 1: Procesamiento de Datos de Estudiantes
+# Transform 1: Json Input con Select Values transformation
 
 ## 1. Input (Entrada)
 Para la primera transformación se utilizó el paso **JSON input**. 
@@ -24,3 +24,20 @@ Como destino final se configuró el paso **JSON output**.
 La transformación toma un archivo JSON crudo, corrige las rutas de acceso, normaliza la identificación del estudiante (cédula) a texto y genera un archivo final consolidado y listo para ser utilizado en el Taller de Business Intelligence.
 
 ![alt text](Imagenes/Transform1/image.png)
+
+## Transform 2:  CSV con mapper transformation
+
+### 1. Carga de Archivo
+![Carga del archivo csv](Imagenes/Transform2/Capture.PNG)
+Como primero paso, configuramos el input a que sea un archivo .csv, en este caso, es un archivo que contiene informacion de laptops.
+![Carga del archivo csv](Imagenes/Transform2/Capture2.PNG)
+![Carga del archivo csv](Imagenes/Transform2/Capture1.PNG)
+
+### 2. Transformación (Mapper Transformation)
+![Transformación del archivo csv](Imagenes/Transform2/Capture3.PNG)
+![Transformación del archivo csv](Imagenes/Transform2/Capture4.PNG)
+
+### 3. Salida (excel)
+Comparación de los resultados
+![Carga del archivo csv](Imagenes/Transform2/Capture5.PNG)
+
