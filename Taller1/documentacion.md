@@ -76,7 +76,7 @@ Para esta transformación se utilizó  el formato **Generate Rows** este módulo
 ![Carga de la configuracion3](Imagenes/Transform3/output3.png)
 ![Carga de la transformacion](Imagenes/Transform3/transformacion.png)
 
-* **Reaultados Obtenidos**:
+* **Resultados Obtenidos**:
 
 ![Carga del archivo txt](Imagenes/Transform3/resultado.png)
 
@@ -102,7 +102,7 @@ Como destino final se configuró el paso XML output.
 ![alt text](Imagenes/Transform4/Imagen4.png)
 ![alt text](Imagenes/Transform4/Imagen5.png)
 
-* **Reaultados Obtenidos**:
+* **Resultados Obtenidos**:
 La transformación procesa el archivo de propiedades, le añade la información institucional fija y genera un archivo XML estructurado, facilitando el intercambio de datos en el taller. Como se observa en la captura, cada registro incluye ahora el campo Entorno con el valor FIS-EPN, normalizando la salida para el proyecto de Business Intelligence.
 
-![alt text](Imagenes/Transform4/Imagen6.png)
+![alt text](Imagenes/Transform4/Imagenfinal.png)
