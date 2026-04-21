@@ -42,3 +42,27 @@ Para esta transformación se utilizó  el formato **CSV file input**.
 ### 3. Output (Salida)
 * **Comparación de los resultados**:
 ![Carga del archivo csv](Imagenes/Transform2/Capture5.PNG)
+
+## Transform 3: Generación de datos de prueba con identificador secuencial y valores aleatorios exportados a archivo txt
+
+### 1. Input (Entrada)
+Para esta transformación se utilizó  el formato **Generate Rows** este módulo genera filas artificiales que son necesarias para el flujo de la transformación.
+
+### 2. Transform (Transformación)
+* **Add Sequence**: Se añade el modulo de add sequence para agregar una secuencia de datos con un identificador único incremental, donde el valor inicial es 1 y el incremento es 1.
+* **Generate Random Value**: Este módulo genera valores aleatorios que se agregan a cada fila, Cada registro contiene un valor aleatorio diferente, útil para pruebas o simulaciones. El tipo de dato del valor aleatorio es interger.
+
+### 3. Output (Salida)
+* **Text File Output**: Este módulo exporta los datos procesados a un archivo en formato txt.
+* **Configuración:**
+- Nombre del archivo: `${Internal.Entry.Current.Directory}/output_datos`
+- Extensión: `txt`
+- Separador: `,`
+- Encabezado: Activado
+
+**Campos exportados:**
+- `id`
+- `dummy`
+- `valor_random`
+
+
