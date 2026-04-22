@@ -106,3 +106,34 @@ Como destino final se configuró el paso XML output.
 La transformación procesa el archivo de propiedades, le añade la información institucional fija y genera un archivo XML estructurado, facilitando el intercambio de datos en el taller. Como se observa en la captura, cada registro incluye ahora el campo Entorno con el valor FIS-EPN, normalizando la salida para el proyecto de Business Intelligence.
 
 ![alt text](Imagenes/Transform4/Imagenfinal.png)
+
+## Transform 5: Text File Input con Split Fields transformation
+### 1. Input (Entrada)  
+Para esta transformación se utilizó el paso **Text file input**.
+
+* **Configuración técnica:** Se cargó el archivo de texto plano delimitado (por ejemplo, `.txt` o `.csv`) especificando la ruta correspondiente. En la pestaña *Content* se definió el tipo de separador (como coma `,`, punto y coma `;` u otro delimitador según el archivo).
+  
+![alt text](Imagenes/Transform5/Archivotxt.png)
+
+* En la pestaña *Fields* se configuraron los campos de entrada, definiendo nombre, tipo de dato y longitud según la estructura del archivo fuente.
+
+![alt text](Imagenes/Transform5/PestanaFields.png)
+![alt text](Imagenes/Transform5/PestanaContent.png)
+
+* **Preview Input**
+![alt text](Imagenes/Transform5/PreviewInputTxt.png)
+
+### 2. Transform (Transformación)  
+Se utilizó el paso **Split fields** para dividir campos compuestos en múltiples columnas.
+
+![alt text](Imagenes/Transform5/ConexionFields.png)
+
+* **Separación de datos:** Se configuró el campo de entrada que contiene valores concatenados (por ejemplo: `"nombre,apellido,edad"`).  
+* **Definición de delimitador:** Se estableció el carácter separador utilizado dentro del campo (coma, pipe `|`, etc.).  
+* **Generación de nuevos campos:** El paso divide el contenido en múltiples columnas independientes, permitiendo estructurar correctamente la información para su posterior procesamiento.
+
+![alt text](Imagenes/Transform5/ConfiguracionSplit.png)
+
+* **Preview Output**
+
+![alt text](Imagenes/Transform5/FinalPreview.png)
